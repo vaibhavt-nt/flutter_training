@@ -15,6 +15,8 @@ import 'package:flutter_training/widgets/slider.dart';
 import 'package:flutter_training/widgets/tab_bar.dart';
 import 'package:flutter_training/widgets/table_view.dart';
 
+import 'opacity.dart';
+
 
 void main() => runApp(homepage());
 class homepage extends StatelessWidget {
@@ -24,7 +26,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: slider_widget(),
+      home: Opacit_widget(),
     );
   }
 }
