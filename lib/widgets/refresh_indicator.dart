@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PullToRefreshApp extends StatelessWidget {
   const PullToRefreshApp({super.key});
 
@@ -26,11 +25,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<String> items = List.generate(20, (index) => 'Item ${index + 1}');
   GlobalKey<RefreshIndicatorState> refreshIndicatorKey =
-  GlobalKey<RefreshIndicatorState>();
+      GlobalKey<RefreshIndicatorState>();
 
   Future<void> refreshData() async {
     // Simulating an API request or data refresh
-    await  Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
 
     setState(() {
       // Update the list with new data
