@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_training/widgets/Wrap.dart';
 import 'package:flutter_training/widgets/drawer.dart';
+import 'package:flutter_training/widgets/expanded.dart';
 import 'package:flutter_training/widgets/gesture_detector.dart';
 import 'package:flutter_training/widgets/gride_view.dart';
 import 'package:flutter_training/widgets/list_view.dart';
@@ -24,7 +25,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: slider_widget(),
+      home: Expande_Widget(),
     );
   }
 }
