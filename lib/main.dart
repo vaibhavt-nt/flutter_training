@@ -21,6 +21,7 @@ import 'package:flutter_training/widgets/sliverlist.dart';
 import 'package:flutter_training/widgets/streambuilder.dart';
 import 'package:flutter_training/widgets/tab_bar.dart';
 import 'package:flutter_training/widgets/table_view.dart';
+import 'package:flutter_training/widgets/tooltip.dart';
 
 
 void main() => runApp(homepage());
@@ -31,7 +32,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: CustomPaintWidget(),
+      home: ToolTipWidget(),
     );
   }
 }
