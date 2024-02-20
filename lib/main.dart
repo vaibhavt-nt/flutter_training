@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_training/widgets/Wrap.dart';
+import 'package:flutter_training/widgets/cipRRect.dart';
 import 'package:flutter_training/widgets/drawer.dart';
 import 'package:flutter_training/widgets/fade_transition.dart';
 import 'package:flutter_training/widgets/gesture_detector.dart';
@@ -28,7 +29,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: StreamBuilderWidget(),
+      home: clipRRect_Widget(),
     );
   }
 }
