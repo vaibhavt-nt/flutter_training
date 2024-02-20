@@ -6,6 +6,7 @@ import 'package:flutter_training/widgets/drawer.dart';
 import 'package:flutter_training/widgets/fade_transition.dart';
 import 'package:flutter_training/widgets/gesture_detector.dart';
 import 'package:flutter_training/widgets/gride_view.dart';
+import 'package:flutter_training/widgets/hero.dart';
 import 'package:flutter_training/widgets/list_view.dart';
 import 'package:flutter_training/widgets/list_view_builder.dart';
 import 'package:flutter_training/widgets/mouse_region.dart';
@@ -29,7 +30,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: clipRRect_Widget(),
+      home: HeroWidget(),
     );
   }
 }
