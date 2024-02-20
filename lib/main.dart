@@ -5,6 +5,7 @@ import 'package:flutter_training/widgets/animation_builder.dart';
 import 'package:flutter_training/widgets/backdrop_filter.dart';
 import 'package:flutter_training/widgets/cipRRect.dart';
 import 'package:flutter_training/widgets/custom_paint.dart';
+import 'package:flutter_training/widgets/dismissible.dart';
 import 'package:flutter_training/widgets/drawer.dart';
 import 'package:flutter_training/widgets/fade_transition.dart';
 import 'package:flutter_training/widgets/fitterbox.dart';
@@ -37,7 +38,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: AnimationBuilderWidget(),
+      home: DismissibleWidget(),
     );
   }
 }
