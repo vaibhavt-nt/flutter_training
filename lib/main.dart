@@ -17,6 +17,7 @@ import 'package:flutter_training/widgets/flexible.dart';
 import 'package:flutter_training/widgets/gesture_detector.dart';
 import 'package:flutter_training/widgets/gride_view.dart';
 import 'package:flutter_training/widgets/hero.dart';
+import 'package:flutter_training/widgets/indexstack.dart';
 import 'package:flutter_training/widgets/layout_builder.dart';
 import 'package:flutter_training/widgets/list_view.dart';
 import 'package:flutter_training/widgets/list_view_builder.dart';
@@ -45,7 +46,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: AnimatedSwitcherExample(),
+      home: IndexStackWidget(),
     );
   }
 }
