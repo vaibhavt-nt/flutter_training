@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_training/widgets/Wrap.dart';
 import 'package:flutter_training/widgets/animatedIcon.dart';
+import 'package:flutter_training/widgets/animatedPositioned.dart';
 import 'package:flutter_training/widgets/animatedlist.dart';
 import 'package:flutter_training/widgets/animatedswitcher.dart';
 import 'package:flutter_training/widgets/animation_builder.dart';
@@ -45,7 +46,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: AnimatedSwitcherExample(),
+      home: AnimatedPositionedExample(),
     );
   }
 }
