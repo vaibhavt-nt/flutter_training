@@ -7,6 +7,7 @@ import 'package:flutter_training/widgets/animatedswitcher.dart';
 import 'package:flutter_training/widgets/animation_builder.dart';
 import 'package:flutter_training/widgets/backdrop_filter.dart';
 import 'package:flutter_training/widgets/cipRRect.dart';
+import 'package:flutter_training/widgets/colorfilter.dart';
 import 'package:flutter_training/widgets/custom_paint.dart';
 import 'package:flutter_training/widgets/dismissible.dart';
 import 'package:flutter_training/widgets/draggable.dart';
@@ -48,7 +49,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: SelectableTextWidget(),
+      home: ColorsFilterWidget(),
     );
   }
 }
