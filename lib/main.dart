@@ -11,6 +11,7 @@ import 'package:flutter_training/widgets/draggable.dart';
 import 'package:flutter_training/widgets/drawer.dart';
 import 'package:flutter_training/widgets/fade_transition.dart';
 import 'package:flutter_training/widgets/fitterbox.dart';
+import 'package:flutter_training/widgets/flexible.dart';
 import 'package:flutter_training/widgets/gesture_detector.dart';
 import 'package:flutter_training/widgets/gride_view.dart';
 import 'package:flutter_training/widgets/hero.dart';
@@ -41,7 +42,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: AnimatedListWidget(),
+      home: FlexibleWidget(),
     );
   }
 }
