@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_training/packages/http_get.dart';
 import 'package:flutter_training/packages/http_post.dart';
+import 'package:flutter_training/packages/provier.dart';
 import 'package:flutter_training/widgets/Wrap.dart';
 import 'package:flutter_training/widgets/animatedIcon.dart';
 import 'package:flutter_training/widgets/animatedlist.dart';
@@ -45,6 +46,7 @@ import 'package:flutter_training/widgets/table_view.dart';
 import 'package:flutter_training/widgets/tooltip.dart';
 import 'package:flutter_training/widgets/transform.dart';
 import 'package:flutter_training/widgets/valuelistnablebuilder_valuenotifer.dart';
+import 'package:provider/provider.dart';
 
 
 void main() => runApp(homepage());
@@ -55,8 +57,12 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: APICall(),
-    );
+        home: MultiProvider(
+        providers: [
+        ChangeNotifierProvider(create: (_) => Counter()),
+    ],
+    child: const MyApp(),
+    ));
   }
 }
 
