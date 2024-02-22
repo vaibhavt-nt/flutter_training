@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_training/packages/animation.dart';
 import 'package:flutter_training/packages/device_preview.dart';
 import 'package:flutter_training/packages/http_get.dart';
 import 'package:flutter_training/packages/http_post.dart';
@@ -59,10 +60,9 @@ class homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context);
     return MaterialApp(
       title: "my home page",
-        home: ScreenUtilPakage());
+        home: TransitionsAnimation());
   }
 }
 

@@ -41,6 +41,7 @@ dependencies:
   image_picker: ^1.0.7
   device_preview: ^1.1.0
   flutter_screenutil: ^5.9.0
+  animations: ^2.0.11
 
 dev_dependencies:
   flutter_test:
