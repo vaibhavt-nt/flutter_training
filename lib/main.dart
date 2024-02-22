@@ -1,10 +1,11 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_training/packages/device_preview.dart';
 import 'package:flutter_training/packages/http_get.dart';
 import 'package:flutter_training/packages/http_post.dart';
 import 'package:flutter_training/packages/provier.dart';
+import 'package:flutter_training/packages/screen_util.dart';
 import 'package:flutter_training/packages/url_launcher.dart';
 import 'package:flutter_training/widgets/Wrap.dart';
 import 'package:flutter_training/widgets/animatedIcon.dart';
@@ -52,18 +53,16 @@ import 'package:flutter_training/widgets/valuelistnablebuilder_valuenotifer.dart
 import 'package:provider/provider.dart';
 
 
-void main() =>  runApp(DevicePreview(
-  enabled: true,
-  builder: (context) => const HomePage(),
-));
+void main() => runApp(homepage());
 class homepage extends StatelessWidget {
   const homepage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(context);
     return MaterialApp(
       title: "my home page",
-        home: DevicePreviewPackage());
+        home: ScreenUtilPakage());
   }
 }
 
