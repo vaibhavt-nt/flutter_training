@@ -8,6 +8,7 @@ import 'package:flutter_training/widgets/animation_builder.dart';
 import 'package:flutter_training/widgets/backdrop_filter.dart';
 import 'package:flutter_training/widgets/checkbox.dart';
 import 'package:flutter_training/widgets/cipRRect.dart';
+import 'package:flutter_training/widgets/circular_&_linear_progress_indicators_widget.dart';
 import 'package:flutter_training/widgets/colorfilter.dart';
 import 'package:flutter_training/widgets/custom_paint.dart';
 import 'package:flutter_training/widgets/dismissible.dart';
@@ -52,7 +53,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-      home: List_Wheel_Scroll_View_Widget(),
+      home: circular_linear_progress_indicators_widget(),
     );
   }
 }
