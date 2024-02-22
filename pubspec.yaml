@@ -41,6 +41,8 @@ dependencies:
   image_picker: ^1.0.7
   google_fonts: ^6.1.0
   cached_network_image: ^3.3.1
+  geolocator: ^11.0.0
+  introduction_screen: ^3.1.12
 
 dev_dependencies:
   flutter_test:

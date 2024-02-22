@@ -5,6 +5,7 @@ import 'package:flutter_training/packages/google_font.dart';
 import 'package:flutter_training/packages/http_get.dart';
 import 'package:flutter_training/packages/http_post.dart';
 import 'package:flutter_training/packages/image_picker.dart';
+import 'package:flutter_training/packages/introduction_screen.dart';
 import 'package:flutter_training/packages/provier.dart';
 import 'package:flutter_training/packages/url_launcher.dart';
 import 'package:flutter_training/widgets/Wrap.dart';
@@ -61,7 +62,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-        home: CachedNetworkImagePackage());
+        home: IntroductionScreenPackage());
   }
 }
 
