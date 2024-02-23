@@ -8,6 +8,7 @@ import 'package:flutter_training/packages/fl_chart/pie_chart.dart';
 import 'package:flutter_training/packages/fl_chart/radar_chart.dart';
 import 'package:flutter_training/packages/fl_chart/scatter_chart.dart';
 import 'package:flutter_training/packages/google_font.dart';
+import 'package:flutter_training/packages/hive/hive.dart';
 import 'package:flutter_training/packages/http_get.dart';
 import 'package:flutter_training/packages/http_post.dart';
 import 'package:flutter_training/packages/image_picker.dart';
@@ -59,10 +60,28 @@ import 'package:flutter_training/widgets/table_view.dart';
 import 'package:flutter_training/widgets/tooltip.dart';
 import 'package:flutter_training/widgets/transform.dart';
 import 'package:flutter_training/widgets/valuelistnablebuilder_valuenotifer.dart';
+import 'package:hive/hive.dart';
 import 'package:provider/provider.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 
-void main() => runApp(homepage());
+import 'package:hive/hive.dart';
+
+void main() {
+  //Hive.init('somePath') -> not needed in browser
+
+  // var box = await Hive.openBox('testBox');
+  //
+  // box.put('name', 'David');
+  //
+  // print('Name: ${box.get('name')}');
+
+  runApp(homepage());
+}
+// initHive() async {
+//   await Hive.initFlutter();
+//   await Hive.openBox('box');
+
 class homepage extends StatelessWidget {
   const homepage({super.key});
 
@@ -70,7 +89,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-        home: FilePickerExample());
+        home: MainScreen());
   }
 }
 
