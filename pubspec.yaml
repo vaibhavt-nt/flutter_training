@@ -45,6 +45,7 @@ dependencies:
   introduction_screen: ^3.1.12
   translator: ^1.0.0
   sensors_plus: ^4.0.2
+  fl_chart: ^0.66.2
 
 dev_dependencies:
   flutter_test:

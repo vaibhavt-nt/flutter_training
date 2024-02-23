@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_training/packages/cached_network_image.dart';
+import 'package:flutter_training/packages/fl_chart/bar_chart.dart';
+import 'package:flutter_training/packages/fl_chart/line_chart.dart';
+import 'package:flutter_training/packages/fl_chart/pie_chart.dart';
+import 'package:flutter_training/packages/fl_chart/radar_chart.dart';
+import 'package:flutter_training/packages/fl_chart/scatter_chart.dart';
 import 'package:flutter_training/packages/google_font.dart';
 import 'package:flutter_training/packages/http_get.dart';
 import 'package:flutter_training/packages/http_post.dart';
@@ -64,7 +69,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-        home: AccelerometerExample());
+        home: ScatterChartExample());
   }
 }
 
