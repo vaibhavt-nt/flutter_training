@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_training/packages/cached_network_image.dart';
+import 'package:flutter_training/packages/file_picker.dart';
 import 'package:flutter_training/packages/fl_chart/bar_chart.dart';
 import 'package:flutter_training/packages/fl_chart/line_chart.dart';
 import 'package:flutter_training/packages/fl_chart/pie_chart.dart';
@@ -69,7 +70,7 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "my home page",
-        home: ScatterChartExample());
+        home: FilePickerExample());
   }
 }
 
