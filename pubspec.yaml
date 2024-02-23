@@ -46,6 +46,7 @@ dependencies:
   translator: ^1.0.0
   sensors_plus: ^4.0.2
   fl_chart: ^0.66.2
+  local_auth: ^2.2.0
 
 dev_dependencies:
   flutter_test:
