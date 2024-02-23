@@ -43,6 +43,7 @@ dependencies:
   cached_network_image: ^3.3.1
   geolocator: ^11.0.0
   introduction_screen: ^3.1.12
+  translator: ^1.0.0
 
 dev_dependencies:
   flutter_test:
