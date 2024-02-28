@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_training/widgets/baseline_widget.dart';
 
-import 'TabPageSelector.dart';
+import 'tab_page_selector.dart';
 
 class GestureDetectorPage extends StatelessWidget {
   const GestureDetectorPage({super.key});
